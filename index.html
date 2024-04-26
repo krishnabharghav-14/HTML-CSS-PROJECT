@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background{
+            background-image: url(./img/tm-astro-bg.jpg);
+            background-size: contain;
+        }
+        #nav1{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #nav1 h2{
+            padding-left: 10px;
+        }
+        .nav2{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-around;
+            gap: 15px;
+        }
+        .pagename{
+            width: 6rem; 
+            text-align: center;
+           
+        }
+        .understyle1{
+            display: ;
+            position: relative;
+            height: 10px; 
+            margin-top: -1px; 
+
+        }
+        .understyle1 hr{
+            position: relative;
+            top: 4px;
+            border: 1px solid white;
+            width: 85%;
+        }
+        .understyle1 .point{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 2.6625rem;
+        }
+        #page1{
+            display: ;
+            padding-top: 5px;
+            position: relative;
+            left: 30px;
+            width: 100px;
+        }
+        #page2{
+            display: none;
+            padding-top: 5px;
+            position: relative;
+            left: 30px;
+            width: 100px;
+        }
+        #page3{
+            display: none;
+            padding-top: 5px;
+            position: relative;
+            left: 30px;
+            width: 100px;
+        }
+        #page4{
+            display: none;
+            padding-top: 5px;
+            position: relative;
+            left: 30px;
+            width: 100px;
+        }
+        .understyle2{
+            display: ;
+            height: 10px; 
+            position: relative;
+            margin: 20px;
+            width: 102%;
+            margin-left: -5px;
+        }
+        .understyle2 hr{
+            width: 98%;
+        }
+        .understyle2 .point1{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            left: 2px;            
+
+        }
+        .understyle2 .point2{
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: -4px;
+            right: 2px;            
+
+        }
+        .container1{
+            width: 95%;
+        }
+        .containergrid1{
+            display: grid;
+            grid-template-columns: auto auto;
+            row-gap: 10px;            
+
+
+        }
+        .content h3,p{
+            opacity: 1px;
+        }
+        .content{
+            background-color: black;
+            opacity: 0.4;
+        }
+        .button{
+            width: 150px;
+            height: 20px;
+            background-color: white;
+            color: black;
+            padding-top: 5px;
+        }
+        @media only screen and (min-width:769px) and (max-width:1024px){
+
+            #nav1{
+                grid-template-columns: auto auto;
+            }
+            .understyle1{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <div class="background">
+        <nav>
+            <div id="nav1">
+                <h2>Astro Motion</h2>
+                <div class="nav2">
+                    <div class="pagename" id="page1">
+                        <span>Home</span>
+                        <div class="understyle1">
+                            <hr>
+                            <center>
+                                <div class="point"></div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="pagename" id="page2">
+                        <span>Gallery</span>
+                        <div class="understyle1">
+                            <hr>
+                            <center>
+                                <div class="point"></div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="pagename" id="page3">
+                        <span>About</span>
+                        <div class="understyle1">
+                            <hr>
+                            <center>
+                                <div class="point"></div>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="pagename" id="page4">
+                        <span>Contact</span>
+                        <div class="understyle1">
+                            <hr>
+                            <center>
+                                <div class="point"></div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        <center>
+        <div class="container1">
+            <div class="understyle2">
+                <hr>
+                <center>
+                    <div class="point1"></div>
+                    <div class="point2"></div>
+                </center>
+
+            </div>
+            <div class="containergrid1">
+                <div class="content" style="grid-column: 1/3;">
+                    <h3>Welcome to Astro Motion</h3>
+                    <p>This HTML template has a motion video background loop which is provided by Get Free Pictures. This is one- page responsive layout for your websites. Feel free to use this for a commercial purpose.</p>
+                    <p>You are not permitted to redistribute this template on your Free CSS collection websites. Please contact us for more information</p>
+                </div>
+                <div>
+                    <img src="./img/home-img-1.jpg">
+                </div>
+                <div>
+                    <img src="./img/home-img-2.jpg" height="180px">
+                </div>
+            </div>
+            <div class="understyle2">
+                <hr>
+                <center>
+                    <div class="point1"></div>
+                    <div class="point2"></div>
+                </center>
+
+            </div>
+            <div class="button">View Gallery</div>
+
+            <div>
+
+        </div>
+        </center>
+        
+    </div>
+</body>
+</html>
+
+
+
+<!-- underline style -->
+<!-- <div class="understyle1">
+    <hr>
+    <center>
+        <div class="point"></div>
+    </center>
+</div> -->
