@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <style>
+        .back1{
+            background-image: url(./img/tm-astro-bg.jpg);
+            background-size: cover;
+            color: white;
+            font-size: 0.7rem;
+        }
+        #heading{
+            color: white;
+        }
+        #color1{
+            color: white;
+        }
+        .input{
+            background-color: transparent;
+            border: 0px;
+            padding: 1px;
+            width: 100%;
+        }
+        .form-bottom{
+            border-bottom: 1px solid white;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .contact-grid{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 50px;
+            row-gap: 40px;
+        }
+        .button{
+            width: 90px;
+            height: 40px;
+        }
+        .button-position{
+            margin-left: 35%;
+            margin-top: 30px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .footer p{
+            padding: 2px;
+        }
+        @media only screen and (min-width:480px) and (max-width:2000px){
+            .back1{
+                font-size: 1rem;
+            }
+            #nav1{
+                padding-top:30px;
+            }
+            #heading{
+                font-size: 2rem;
+            }
+            #color{
+                color: lightgreen;
+            }
+            #home{
+                border-bottom: 1px solid lightgreen;
+                position: relative;
+            }
+            #others{
+                border-bottom: 1px solid white;
+                position: relative;
+            }
+            .navgrid{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                margin-right: 200px;
+                column-gap: 50px;
+                text-align: center;
+            }
+            .understyle{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: lightgreen;
+                position: absolute;
+                bottom: -5px;
+                right: 50%;
+            }
+            .understyle2{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: white;
+                position: absolute;
+                bottom: -5px;
+                right: 50%;
+            }
+            .contact-grid{
+                grid-template-columns: 45% 55%;
+                column-gap: 60px;
+                width: 40%;
+                height: 50%;
+                margin-top: 100px;
+                margin-bottom: 60px;
+                margin-left: 30%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="back1">
+        <nav class="navbar navbar-expand-md bg-transparent" id="nav1">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="heading">Astro Motion</a>
+              <button id="nav2" class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <div class="navgrid">
+                    <div id="others">
+                      <a class="nav-link" href="./index.html" id="color1">Home</a>
+                      <div class="understyle2"></div>
+                    </div>
+                    <div id="others">
+                      <a class="nav-link" href="./index2.html" id="color1">Gallery</a>
+                      <div class="understyle2"></div>
+                    </div>
+                    <div id="others">
+                      <a class="nav-link" href="./index3.html" id="color1">About</a>
+                      <div class="understyle2"></div>
+                    </div>
+                    <div id="home">
+                      <a class="nav-link" href="./index4.html" id="color">Contact</a>
+                      <div class="understyle"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+
+        <article>
+            <div class="contact-grid">
+                <form>
+                    <div class="form-bottom">
+                        <label for="F1">Name</label><br>
+                        <input type="text" name="person-name" id="F1" class="input">
+                    </div>
+                    <div class="form-bottom">
+                        <label for="F2">Email</label><br>
+                        <input type="email" name="Person-Email" id="F2" class="input">
+                    </div>
+                    <div class="form-bottom">
+                        <label for="F3">Message</label><br>
+                        <textarea name="Person-Message" id="F3" cols="30" rows="5" class="input"></textarea>
+                    </div>
+                    <div class="button-position">
+                        <button class="button">Send</button>
+                    </div>                
+                </form>
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Integer erat turpis, vestibulum pellentesque aliquam ultricies, finibus nec dui. Donec bibendum enim mi, at tristique leo feugiat at.</p>
+                    <p>Email: info@company.com <br>Tel: 010-020-0340</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30453.946085222546!2d78.45391695222888!3d17.42410444201264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97558c2e9b6b%3A0x25705363cc844e9d!2sHussain%20Sagar!5e0!3m2!1sen!2sin!4v1714367107804!5m2!1sen!2sin" width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </article>
+
+        <footer>
+            <div class="footer">
+              <p>Copyright 2021 Astro Motion Company Limited.All rights reserved.</p>
+              <p>Designed by Krishna Bhargav</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>

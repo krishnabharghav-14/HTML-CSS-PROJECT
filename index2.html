@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+    <style>
+        .back1{
+            background-image: url(./img/tm-astro-bg.jpg);
+            background-size: cover;
+            color: white;
+            font-size: 0.7rem;
+        }
+        #headind{
+            color: white;
+        }
+        #heading{
+        color: white;
+        }
+        #color1{
+            color: white;
+        }
+        .top-bottom{
+            width: 95%;
+            border-top: 1px solid white;
+            margin-top: 150px;
+            margin-left: 16px;
+            position: relative;
+        }
+        .point1{
+            width: 10px;
+             height: 10px;
+            border-radius: 50%;
+             background-color: white;
+            position: absolute;
+            top: -5px;
+            left: 0px;
+        }
+      .point2{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            top: -5px;
+            right: 0px;
+      }
+      .picgrid{
+            display: grid;
+            width: 90%;
+            grid-template-columns: 50% 50%;
+            margin: 5%;
+            justify-content: center;
+            gap: 5px;
+      }
+      .picgrid img{
+            width: 100%;
+      }
+      .dot-arrangement{
+        display: none;
+        
+      }
+      .dot1{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: lightgreen;
+        margin: 5px;
+      }
+      .dot{
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 5px;
+      }
+      .footer{
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.7rem;
+        }
+        .footer p{
+          padding: 2px;
+        }
+        @media only screen and (min-width:480px) and (max-width:2000px) {
+            .back1{
+            font-size: 1rem;
+            } 
+            #nav1{
+            padding-top: 30px;
+            }
+            #heading{
+            font-size: 2rem;
+            }
+            #color1{
+            font-size: 1rem;
+            }
+            #color{
+            color: lightgreen;
+            }
+            #home{
+            border-bottom: 1px solid lightgreen;
+            position: relative;
+            }
+            #others{
+            border-bottom: 1px solid white;
+            position: relative;            
+            }
+            .understyle{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: lightgreen;
+            position: absolute;
+            bottom: -5px;
+            right: 50%;
+            }
+            .understyle2{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            bottom: -5px;
+            right: 50%;
+            }
+            .navgrid{
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            margin-right: 200px;
+            column-gap: 50px;
+            text-align: center;
+            }
+            .top-bottom{
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                margin-top: 140px;
+            }
+            .picgrid{
+                grid-template-columns: auto auto auto auto auto auto;
+            }
+            .dot-arrangement{
+                display: block;
+                margin-left: 44%;
+            }
+            .footer{
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="back1">
+        <nav class="navbar navbar-expand-md bg-transparent" id="nav1">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="heading">Astro Motion</a>
+              <button id="nav2" class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                  <div class="navgrid">
+                    <div id="others">
+                      <a class="nav-link" href="./index.html" id="color1">Home</a>
+                      <div class="understyle2"></div>
+                    </div>
+                    <div id="home">
+                      <a class="nav-link" href="./index2.html" id="color">Gallery</a>
+                      <div class="understyle"></div>
+                    </div>
+                    <div id="others">
+                      <a class="nav-link" href="./index3.html" id="color1">About</a>
+                      <div class="understyle2"></div>
+                    </div>
+                    <div id="others">
+                      <a class="nav-link" href="./index4.html" id="color1">Contact</a>
+                      <div class="understyle2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+
+        <article>
+            <div class="top-bottom">
+                <div class="point1"></div>
+                <div class="point2"></div>  
+                <div class="picgrid">
+                    <img src="./img/gallery-img-01.jpg" alt="gallery-img-01">
+                    <img src="./img/gallery-img-02.jpg" alt="gallery-img-02">
+                    <img src="./img/gallery-img-03.jpg" alt="gallery-img-03">
+                    <img src="./img/gallery-img-04.jpg" alt="gallery-img-04">
+                    <img src="./img/gallery-img-05.jpg" alt="gallery-img-05">
+                    <img src="./img/gallery-img-06.jpg" alt="gallery-img-06">
+                </div>              
+            </div>
+            <div class="dot-arrangement">
+                <div class="dot1"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </article>
+
+
+        <footer>
+            <div class="footer">
+              <p>Copyright 2021 Astro Motion Company Limited.All rights reserved.</p>
+              <p>Designed by Krishna Bhargav</p>
+            </div>
+        </footer>
+    </div>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>    
+</body>
+</html>
